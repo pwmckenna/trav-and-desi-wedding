@@ -213,13 +213,13 @@ nav a {
 
 nav li a:hover {
     color: #fff;
-    background: #97BF86;
+    background: #3A3A3A;
     text-decoration: none;
     outline: none;
 }
 nav li a.selected {
     color: #fff;
-    background: #97BF86;
+    background: #3A3A3A;
     text-decoration: none;
     outline: none;
 }
@@ -286,6 +286,7 @@ section {
     height: 100%;
     margin-top: 200px;
     color: white;
+    border: 1px solid #ccc;
 
 /*    -ms-border-radius: 8px;
     -o-border-radius: 8px;
