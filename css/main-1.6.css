@@ -94,11 +94,12 @@ body {
 
     border: 10px solid #090909;
 
-    -ms-border-radius: 8px;
+    /*-ms-border-radius: 8px;
     -o-border-radius: 8px;
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
     border-radius: 8px;
+    */
 }
 
 #gmap small a,
@@ -142,22 +143,22 @@ body {
     display: block;
     padding: 10px 0 10px 0;
     margin-bottom: 300px;
-    background: black;
+    /*background: black;*/
 
-    -ms-border-radius: 8px;
+/*    -ms-border-radius: 8px;
     -o-border-radius: 8px;
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
     border-radius: 8px;
-
+*/
     /* Fallback for web browsers that doesn't support RGBa */
-    background: rgb(0, 0, 0);
+    /*background: rgb(0, 0, 0);*/
     /* RGBa with 0.7 opacity */
-    background: rgba(0, 0, 0, 0.4);
+    /*background: rgba(0, 0, 0, 0.4);*/
     /* For IE 5.5 - 7*/
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2000000, endColorstr=#B2000000);
+    /*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2000000, endColorstr=#B2000000);*/
     /* For IE 8*/
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2000000, endColorstr=#B2000000)";
+    /*-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2000000, endColorstr=#B2000000)";*/
 }
 
 #introtext .head-caitlin {
@@ -286,12 +287,12 @@ section {
     margin-top: 200px;
     color: white;
 
-    -ms-border-radius: 8px;
+/*    -ms-border-radius: 8px;
     -o-border-radius: 8px;
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
     border-radius: 8px;
-
+*/
     /* Fallback for web browsers that doesn't support RGBa */
     background: rgb(0, 0, 0);
     /* RGBa with 0.7 opacity */
@@ -808,12 +809,13 @@ section h2 {
 }
 .responsive-image.proposal img {
     border: 10px solid #090909;
-
+/*
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
     border-radius: 8px;
+    */
 }
 
 img.thegardenhouse  {
@@ -865,10 +867,11 @@ a.email {
 
     border: 4px solid #090909;
 
-    -ms-border-radius: 2px;
+    /*-ms-border-radius: 2px;
     -o-border-radius: 2px;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
     border-radius: 2px;
+    */
 }
 
