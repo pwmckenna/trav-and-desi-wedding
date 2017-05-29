@@ -261,7 +261,7 @@ body {
     width: 200%;
     height: 200%;
 
-    background-image: url('/img/bg-pic.jpg');
+    background-image: url('../img/bg-pic.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
