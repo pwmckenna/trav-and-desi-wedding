@@ -238,10 +238,6 @@ nav ul li a::-moz-focus-inner {border:0;}
 .main {
     padding: 5% 0;
 }
-.main header {
-    float: left;
-    width: 80%;
-}
 
 /* ==========================================================================
    Patrick's custom styles
@@ -258,26 +254,11 @@ body {
 
 }
 
-#bg-image {
-    position: fixed;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-}
-#bg-image img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    min-width: 50%;
-    min-height: 50%;
-}
-
 #bg-container {
-
+    background-image: url('/img/bg-pic.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 section {
@@ -285,7 +266,7 @@ section {
     padding: 25px;
     background-color: black;
     height: 100%;
-    margin-top: 200px;
+    margin-top: 230px;
     color: white;
     border: 1px solid #ccc;
 
