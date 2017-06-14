@@ -32,6 +32,16 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/MIT-license.txt
 
 $(function() {
 
+    var config = {
+        apiKey: "AIzaSyD16c0nk1511I1Q8x5jVZ73F10m_8OqnTc",
+        authDomain: "rsvp-fae58.firebaseapp.com",
+        databaseURL: "https://rsvp-fae58.firebaseio.com",
+        projectId: "rsvp-fae58",
+        storageBucket: "rsvp-fae58.appspot.com",
+        messagingSenderId: "1067194313809"
+    };
+    firebase.initializeApp(config);
+    
 	// Do our DOM lookups beforehand
 	var nav_container = $(".header-container");
 	var nav = $("#nav");
@@ -92,7 +102,6 @@ $(function() {
     $('figure.responsive-image').picture();
 
     $('.rsvp-yes').click(function (e) {
-        var firebase = new Firebase('https://rsvp.firebaseio.com/yes/');
         var name = $('#rsvp-name').val();
         if (!name) {
             return $('#rsvp-name').focus();
@@ -101,38 +110,28 @@ $(function() {
         if (!plusOnes) {
             return $('#rsvp-plus-ones').focus();
         }
-        var dietaryRestrictions = $('#rsvp-dietary-restrictions').val();
-        if (!dietaryRestrictions) {
-            return $('#rsvp-dietary-restrictions').focus();
-        }
-        firebase.push({
+        firebase.database().ref().child('yes').push({
             name: name,
-            plusOnes: plusOnes,
-            dietaryRestrictions: dietaryRestrictions
+            plusOnes: plusOnes
         });
         $('#rsvp-name').val('');
         $('#rsvp-plus-ones').val('');
-        $('#rsvp-dietary-restrictions').val('');
 
         $('#rsvp .column').html('<h4>Wonderful. We\'ll see you then!</h4>');
     });
 
     $('.rsvp-no').click(function (e) {
-        var firebase = new Firebase('https://rsvp.firebaseio.com/no/');
         var name = $('#rsvp-name').val();
         if (!name) {
             return $('#rsvp-name').focus();
         }
         var plusOnes = $('#rsvp-plus-ones').val();
-        var dietaryRestrictions = $('#rsvp-dietary-restrictions').val();
-        firebase.push({
+        firebase.database().ref().child('no').push({
             name: name,
-            plusOnes: plusOnes,
-            dietaryRestrictions: dietaryRestrictions
+            plusOnes: plusOnes
         });
         $('#rsvp-name').val('');
         $('#rsvp-plus-ones').val('');
-        $('#rsvp-dietary-restrictions').val('');
 
         $('#rsvp-no-alert').show();
         $('#rsvp .input-group, button').hide();
